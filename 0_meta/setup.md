@@ -9,11 +9,11 @@ or
 
 2) Create database, upload SQL from backup, create user, give user all access to that database (designed that way in code)
 - `mysql -u root -p`
--- `CREATE DATABASE <database>;`
--- `use <database>;`
--- `source /path/to/0_meta/SQL/omrs_portal.sql`
--- `CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';`
--- `GRANT ALL ON <database>.* TO <username>@localhost;`
+    - `CREATE DATABASE <database>;`
+    - `use <database>;`
+    - `source /path/to/0_meta/SQL/omrs_portal.sql`
+    - `CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';`
+    - `GRANT ALL ON <database>.* TO <username>@localhost;`
 
 
 2) Install PHP
