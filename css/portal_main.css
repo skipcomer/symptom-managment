@@ -1,0 +1,1022 @@
+
+header {
+	position:relative;
+	z-index:499;
+	display:block;
+    clear:both;
+    /*overflow:hidden;/*this takes care of left-right floats not being included in the main_container div*/
+	margin-right: 10%;
+	margin-left: 5%;
+	margin-top:0;
+	margin-bottom:0.2em;
+	width: 80%;
+	font-family: "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	background-position: 0 top;
+	
+}
+
+#son{
+	color:#990000;
+	font-size:0.77em;
+	margin-bottom:0;
+}
+
+#header-line2{
+	display:block;
+	margin-top:-0.5em;
+}
+
+#burdette{
+	display:inline-block;
+	color:#000000;
+	font-size:3.5em;
+	font-family: "Arial Black", "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	padding-right:0.1em;
+}
+
+#header_text {
+	display:inline-block;
+	font-size:1em;
+	color:#000000;
+}
+
+#iuscc_link {
+	float:right;
+	position:relative;
+	margin-right: 1.5%;
+	margin-top:-25px;
+	margin-bottom:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	padding-left:1em;
+	padding-right:1em;
+	background-color:#ffffff;
+	font-style:normal;
+	font-size:0.8em;
+	text-decoration:none;
+	color:#990000;
+	font-weight:bold;
+	z-index:499;
+	-moz-border-bottom-left-radius:0.4em;
+	border-bottom-left-radius:0.4em;
+	-moz-border-bottom-right-radius:0.4em;
+	border-bottom-right-radius:0.4em;
+	-moz-box-shadow: 0 0px 2px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 0px 2px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+#iuscc_link:hover
+{
+	background-color:#990000;
+	color:#ffffff;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.carousel-indicators { bottom:10px; }
+
+/*color for circles in the indicator*/
+.carousel-indicators li { border-color:#333; }
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: auto;
+  /*background-color: #777;*/
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+
+
+/*----------- slider CSS ------------------*/
+#slider img{width:100%;}
+
+#slider_content{ margin-top:2em;margin-bottom:4em;}
+
+
+#welcome_text{
+	margin-top:1em;
+	padding-right:0.5em;
+	height:272px;
+	font-family: "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	/*word-break:break-all;*/
+	overflow:hidden;
+}
+
+#welcome_text h2{
+	font-size:1.6em;
+	margin-top:0.5em;
+	margin-bottom:0.3em;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	-o-hyphens: none;
+	hyphens: none;
+}
+
+#welcome_text #tagline{
+	font-size:0.75em;
+	margin-top:-0.85em;
+	margin-bottom:0;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	-o-hyphens: none;
+	hyphens: none;
+}
+
+#more_link{
+	position:absolute;
+	/*z-index:100;*/
+	width:180px;
+	height:32px;
+	bottom:-6px;
+	right:0;
+	margin-bottom:0.7em;
+	text-align:right;
+	line-height: 40px;
+	padding-right:0.5em;
+	/*brown*/
+	color:#4a3c31;/* blue  #00aaff;  blue  #01395f;/* green  #50899c;*/
+	background-image:url(../images/faded_corner.png);
+	cursor:hand;
+	cursor:pointer;	
+}
+/*-----------end slider CSS ------------------*/
+
+/*these are the small callouts that run under the main window*/
+#front_callouts{
+	padding-bottom:1em;
+}
+
+#callout_headline{
+	margin-bottom:0;
+	/*margin-left:-0.5%;*/
+}
+
+#callout_headline h4{
+	margin-bottom:0;
+}
+
+#callout{
+	display:inline-block;
+	padding-right:8.5%;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#bullet{
+	display:inline-block;
+	color:#ffffff;	
+	text-align:center;
+	width:23px;
+	height:23px;
+	margin-right:0.5em;
+	padding-top:2px;
+	background-image: url(../images/copper_bullet.png);
+	background-repeat:no-repeat;
+}
+/*end -- small callouts that run under the main window*/
+
+/*second row of callouts*/
+#feature_row{
+	margin-top:3em;
+	margin-bottom:1em;
+	padding-bottom:1em;
+}
+
+#feature_container{ min-width:275px; }
+
+#feature_callout,
+#last_feature_callout{
+	height:140px;
+	min-width:250px;
+	margin-bottom:2em;
+	border:1px solid #aaaaaa;
+	overflow:hidden;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	-moz-border-radius:3%/10px;
+	border-radius:3%/10px;
+	-moz-box-shadow: 0 2px 2px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 2px 2px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.25);	
+	cursor:hand;
+	cursor:pointer;
+}
+
+#last_feature_callout{
+	margin-right:0;
+}
+
+#feature_text{
+	margin-top:1em;
+	font-size:0.75em;
+	padding-right:1em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	/*word-break:break-all;*/
+}
+
+.callout_img{
+	float:left;
+	display:inline-block;
+	margin-right:0.2em;
+}
+/*end -- second row of callouts*/
+
+/* Latest news window on front page*/
+
+#news_window ul{
+	margin-left:0;
+	padding-left:0;
+	list-style: none;
+}
+
+#news_window ul li{
+	margin-left:0;
+}
+
+#news_window ul li a{
+	/*brown*/
+	color:#4a3c31;/* blue  ##FFFFFF;  blue  #01395f;/* green  #50899c;*/
+	text-decoration:none;
+	margin-left:0;
+}
+
+#news_title{
+	display:inline-block;
+	margin-right:1.5em;
+}
+
+#news_source{
+	display:inline-block;
+	/*brown*/
+	color:#666666;/* blue  ##000000; */
+}
+
+#news_more,#news_more a{
+	float:right;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	/*brown*/
+	color:#4a3c31;/* blue  ##FFFFFF;  blue  #01395f;/* green  #50899c;*/
+	text-decoration:none;
+	margin-right:1em;
+}
+/*  end -- Latest news window on front page*/
+
+
+/*----------------- Page-template -- Symtom Reporting --------------------*/
+
+#headline-section h1,h2,h3,h4 { margin-top:-7px; }
+#symptom-heading { text-align:center; }
+
+/* div-based version of report*/
+#report-outer-div{
+	height:270px;
+	position:relative;
+	width:93%;
+	margin-left:4%;
+	background-color:#FFFFFF;
+	margin-bottom:1em;
+	padding-left:4.5%;
+	padding-bottom:0.5em;
+	border:1px solid #cccccc;
+	overflow:hidden;
+}
+
+#no-problem-outer-div{
+	height:100%;
+	display:inline-block;
+	float:left;
+	width:9%;
+	margin-bottom:0.5em;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	vertical-align:bottom;
+	font-size:1em;
+}
+
+#no-problem-inner-div{
+	height:100%;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	text-align:center;
+	vertical-align:middle;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+#mild-outer-div, #moderate-outer-div{
+	height:100%;
+	display:inline-block;
+	float:left;
+	width:27%;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-weight:bold;
+	font-size:1em;
+}
+
+#mild-inner-div{
+	height:100%;
+	font-weight:normal;
+	background-color:#ddffee;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+#moderate-inner-div{
+	height:100%;
+	font-weight:normal;
+	background-color:#ffffe0;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+#severe-outer-div{
+	display:inline-block;
+	float:left;
+	width:36%;
+	height:100%;
+	text-align:center;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:1em;
+}
+
+#severe-inner-div{
+	height:100%;
+	font-weight:normal;
+	background-color:#ffdddd;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+#report-bar-div{
+	position:absolute;
+	top:170px;
+	width:95%;
+	height:70px;
+	z-index:50;
+}
+#last-report-outer-div{
+	position:relative;
+	width:100%;
+	height:20px;
+	z-index:52;	
+}
+
+#last-report-inner-div{
+	position:absolute;
+	text-align:center;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-size:0.6em;
+	line-height:0.8;
+}
+
+#number-outer-div{
+	width:100%;
+	/*height:34px;*//*removed this for Bootstrap  */
+	height:40px;
+	margin-bottom:10px;
+	/*padding-left:3.5%;*/
+	/*padding-left:4.5%; /*changed value to work with Bootstrap */
+	z-index:51;	
+}
+
+.number-inner-class{
+	display:inline-block;
+	float:left;
+	/*width:8.6666666666667%;*/
+	width:9%;  /*adjusted for Bootsrap*/
+	/*height:30px;*/  /*removed this for Bootstrap  */
+	height:40px;
+	padding-top:0.5em;
+	text-align:center;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.choice{
+	color:#FFFFFF;
+	margin-top:-1px;
+	padding-top:0.1em;
+	/*padding-bottom:0.15em;*/
+	padding-bottom:1.35em;
+	font-size:1.6em;
+	border-top:5px solid #cc0000;
+	border-bottom:5px solid #cc0000;
+}
+
+.select{
+	color:#f0f0f0;
+	border-top:2px solid #000000;
+	border-bottom:2px solid #000000;
+}
+
+.select_0{
+	background-color:#999999;
+	border-left:2px solid #000000;
+}
+
+.select_1,
+.select_2,
+.select_3  { background-color:#99ddbb; }
+
+.select_4,
+.select_5,
+.select_6  { background-color:#ddcc55; }
+
+.select_7,
+.select_8,
+.select_9,
+.select_10 { background-color:#eeaaaa; }
+
+.select_10 { border-right:2px solid #000000; }
+
+.unselect{
+	color:#888888;
+	border-top:2px solid #aaaaaa;
+	border-bottom:2px solid #aaaaaa;
+}
+
+.unselect_1,
+.unselect_2,
+.unselect_3,
+.unselect_4,
+.unselect_5,
+.unselect_6,
+.unselect_7,
+.unselect_8,
+.unselect_9,
+.unselect_10 	{ background-color:none; }
+
+.unselect_10	{ border-right:2px solid #999999; }
+
+#index-outer-div{
+	clear:both;
+	position:static;
+	width:100%;
+	height:20px;
+	/*padding-left:3.5%;*/
+	/*padding-left:4.5%; /*changed value to work with Bootstrap */
+	z-index:53;
+}
+.index-inner-class{
+	display:inline-block;
+	float:left;
+	/*width:8.6666666666667%;*/
+	width:9%;  /*adjusted for Bootsrap*/
+	text-align:center;
+	color:#cc0000;
+	height:20px;
+}
+/* END div-based version of report*/
+
+
+
+/* footer from bootstrap */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+.portalfooter {
+  position: absolute;
+  bottom: 0;
+  /*width: 100%;*/
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background-color: #f5f5f5;
+}
+
+footer {
+	margin-top:3em;
+}
+
+footer a, 
+footer a:link,
+footer a:visited {
+	color:#990000;
+	text-decoration:underline;
+}
+
+footer p{
+	font-size:0.75em;
+}
+
+#footer_text{
+	color:#666666;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size:0.7em;
+	width:80%;
+	margin:auto;
+	margin-top:0.5em;
+	text-align:center;
+	font-style:normal;
+}
+
+nav #footer_links, #footer_links a{
+	margin-top:0.5em;
+	text-decoration:none;
+	text-align:center;
+	font-style:normal;
+	font-size:0.95em;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	color:#990000;
+}
+
+/* -----------------report summary table------------------- */
+.odd_row {
+	clear:both;
+	padding-top:0.5em;
+	/*padding-bottom:0.5em;*/
+	background-color:#f0f8f6;
+	border-top:1px solid #000000;
+	cursor:pointer;
+	cursor:hand;
+}
+.even_row {
+	clear:both;
+	padding-top:0.5em;
+	/*padding-bottom:0.5em;*/
+	background-color:#f8fffd;
+	border-top:1px solid #000000;
+	cursor:pointer;
+	cursor:hand;
+}
+
+#quiz_table{
+	table-layout:fixed;
+	margin-left:1em;
+	width:92%;
+}
+
+#summary_table_labels{
+	text-align:center;
+	/*font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;*/
+	font-size:1em;
+	color:#01395f;
+	border-bottom:2px;
+}
+
+#summary_label_column{
+	width:20%;
+	padding-bottom:0.3em;
+}
+
+.summary_heading_column{
+	width:8%;
+	padding-bottom:0.3em;
+}
+
+.summary_label{
+	text-align:left;
+	/*font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;*/
+	font-size:1em;
+	color:#01395f;
+}
+
+.summary_none_bg,
+.summary_mild_bg,
+.summary_mild_graph,
+.summary_moderate_bg,
+.summary_moderate_graph,
+.summary_severe_bg,
+.summary_severe_graph {
+	padding:0.3em;
+	text-align:center;
+	/*font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;*/
+	font-size:0.85em;
+	color:#01395f;
+}
+
+.summary_none_bg{
+	background-color:#ffffff;
+}
+
+.summary_mild_bg{
+	background-color:#ddffee;
+}
+
+.summary_mild_graph{
+	background-color:#99ddbb;
+	border-top:3px solid #ddffee;
+	border-bottom:3px solid #ddffee;
+}
+
+.summary_moderate_bg{
+	background-color:#ffffe0;
+}
+
+.summary_moderate_graph{
+	background-color:#ddcc55;
+	border-top:3px solid #ffffe0;
+	border-bottom:3px solid #ffffe0;
+}
+
+.summary_severe_bg{
+	background-color:#ffdddd;
+	
+}
+
+.summary_severe_graph{
+	background-color:#eeaaaa;
+	border-top:3px solid #ffdddd;
+	border-bottom:3px solid #ffdddd;
+}
+
+#summary_submit{
+	margin-left:1em;
+	margin-top:2em;
+	margin-bottom:1em;
+}
+/*-------------------------------- END Symptom Reporting Section ---------------------------------*/
+
+/*-------------------------------- Symptom Info Section ------------------------------------------*/
+.item_container{ 
+	margin-top:1em;
+	margin-bottom:1em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto; }
+	
+.item_title{ font-size:1.25em;font-weight:bold; }
+.symptom-info-btn-bar {
+	/*margin-right:1px;*/
+	/*margin-left:1px;*/
+	margin-bottom:1px;
+	margin-top:1px;
+	float:none;
+}
+
+/*----------------------------Symptom manage section ---------------------------------- */
+#quick_report_link{
+	color:#0000FF;
+	cursor:hand;
+	cursor:pointer;
+}
+
+#quick_report label{ margin-left:1em; }
+
+#tc0{
+	margin-left:1em;
+	margin-right:1em;
+	margin-top:0.3em;
+	margin-bottom:0.3em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	background-color:#ffffff;
+	border:1px solid;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#tc1{
+	margin-left:1em;
+	margin-right:1em;
+	margin-top:0.3em;
+	margin-bottom:0.3em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	background-color:#ddffee;
+	border:1px solid;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;	
+}
+
+#tc2{
+	margin-left:1em;
+	margin-right:1em;
+	margin-top:0.3em;
+	margin-bottom:0.3em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	background-color:#ffffe0;
+	border:1px solid;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;		
+}
+
+#tc3{
+	margin-left:1em;
+	margin-right:1em;
+	margin-top:0.3em;
+	margin-bottom:2em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	background-color:#ffdddd;
+	border:1px solid;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;		
+}
+
+#mild_tab{
+	float:left;
+	position:relative;
+	z-index:80;
+	display:inline;
+	margin-left:5%;
+	background-color:#ddffee;
+	text-align:center;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding-left:2em;
+	padding-right:2em;
+	padding-top:0.3em;
+	padding-bottom:0.2em;
+	border-left:1px solid;
+	border-top:1px solid;
+	border-right:1px solid;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;
+	cursor:hand;
+	cursor:pointer;
+}
+#moderate_tab{
+	float:left;
+	position:relative;
+	z-index:0;
+	display:inline;
+	background-color:#ffffe0;
+	text-align:center;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:0.3em;
+	padding-bottom:0.2em;
+	border-left:1px solid;
+	border-top:1px solid;
+	border-right:1px solid;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;
+	cursor:hand;
+	cursor:pointer;
+}
+#severe_tab{
+	float:left;
+	position:relative;
+	z-index:0;
+	display:inline;
+	background-color:#ffdddd;
+	text-align:center;
+	color:#333333;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding-left:1.5em;
+	padding-right:1.5em;
+	padding-top:0.3em;
+	padding-bottom:0.2em;
+	border-left:1px solid;
+	border-top:1px solid;
+	border-right:1px solid;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;	
+	cursor:hand;
+	cursor:pointer;
+}
+#tab_item_mild{
+	clear:both;
+	position:relative;
+	z-index:0;
+	top:-1px;
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:1em;
+	background-color:#ddffee;
+	border:1px solid;
+	padding:1em;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#tab_item_moderate{
+	clear:both;
+	position:relative;
+	z-index:0;
+	top:-1px;
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:1em;
+	background-color:#ffffe0;
+	border:1px solid;
+	padding:1em;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#tab_item_severe{
+	clear:both;
+	position:relative;
+	z-index:0;
+	top:-1px;
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:1em;
+	background-color:#ffdddd;
+	border:1px solid;
+	padding:1em;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#tab_display{
+	margin-left:0.3em;
+	margin-right:0.3em;
+	margin-bottom:0.3em;
+	margin-top:0.3em;
+	padding:2em;
+	background-color:#ffffff;
+	border:1px solid #999999;
+}
+
+#text_mild{
+	background-color:#99ddbb;
+	border:1px solid #99aa00;
+	padding-left:0.3em;
+	padding-right:0.3em;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#text_moderate{
+	background-color:#ddcc55;
+	border:1px solid #aaaa00;
+	padding-left:0.3em;
+	padding-right:0.3em;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#text_severe{
+	background-color:#eeaaaa;
+	border:1px solid #990000;
+	padding-left:0.3em;
+	padding-right:0.3em;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#symptom_ui{
+	clear:both;
+	margin-left:10%;
+	
+}
+
+#symptom_ui_button {
+	float:left;
+	display: table-cell;
+	vertical-align:middle;
+	width:20%;
+	min-height:2.5em;
+	color:#ffffff;
+	font-family:"BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	margin-left:3%;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:2.75%;
+	padding-left:2.75%;
+	text-align:center;
+	border-left: 1px solid #cccccc;
+	-moz-border-radius:0.4em;
+	border-radius:0.4em;
+	background-color:#4a3c31;
+	background-image: url(../images/portal_rt_ui_bg_brown.png);
+	background-size:100% 100%;
+	background-repeat:repeat-x;
+	cursor:hand;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+#more_info_url a{
+	font-size:0.75em;
+}
+
+/*------------------Symptom History----------------*/
+#topic{
+	text-transform:uppercase;
+	margin-left:5%;
+}
+
+#graph_container {
+	margin-left:5%;
+	margin-right:10%;
+	margin-bottom:0.5em;
+	background-color:#f8faff;
+	border: 1px solid #2a77a7;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	padding:0.5em;
+	overflow:scroll;
+	-moz-box-shadow: 0 3px 3px #bbb inset;
+	-webkit-box-shadow: 0 3px 3px #bbb inset;
+	box-shadow: 0 3px 3px #bbb inset;
+}
+
+.graph_feedback {
+	display:inline;
+	font-size:0.9em;
+	text-transform:none;
+	margin-right:2em;
+}
+
+#canvas_container{
+	padding:0.5em;
+	overflow:scroll;
+}
+
+.flash_container{
+	padding:0.5em;
+	overflow:hidden;
+}
+
+
+@media screen and (max-width: 480px) {
+	#no-problem-outer-div,
+	#mild-outer-div, 
+	#moderate-outer-div,
+	#severe-outer-div{ font-size:0.8em; }
