@@ -22,6 +22,12 @@ session_start();
 //  	$_SESSION['CREATED'] = time();  // update creation time
 //}
 	
+// if true - show all errors for debugging
+if(false){
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+}
+
 // make a mysqli connection
 include("php/o_portalConnect.php");
 	

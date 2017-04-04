@@ -3,6 +3,7 @@
 	$dbconnect = "o_portalConnect.php";
 	include($dbconnect);  // make a mysqli connection
 
+
 	
 	if((isset($_REQUEST['user_id']))&&(isset($_REQUEST['session']))&&(isset($_REQUEST['quiz_id']))&&(isset($_REQUEST['q_id']))&&(isset($_REQUEST['report']))&&(isset($_REQUEST['q_text']))&&(isset($_REQUEST['mdata_type']))){
 		// data sent from form 

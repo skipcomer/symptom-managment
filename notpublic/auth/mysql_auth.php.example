@@ -1,0 +1,9 @@
+<?php
+
+// In file mysql_auth.php, under this directory, you might find the following values:
+
+define(MYSQL_DATABASE_HOST, "<host>");
+define(MYSQL_USERNAME, "<username>");
+define(MYSQL_PASSWORD, "<password>");
+define(MYSQL_DATABASE, "<database>");
+
