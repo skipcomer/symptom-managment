@@ -40,6 +40,8 @@
                 location ~ \.php$ {
                    include snippets/fastcgi-php.conf;
                    #include fastcgi_params;
+                   fastcgi_buffers 16 16k; 
+                   fastcgi_buffer_size 32k;
                    fastcgi_param SCRIPT_FILENAME $request_filename;
                    fastcgi_pass unix:/run/php/php7.0-fpm.sock;
                 }
