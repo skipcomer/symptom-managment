@@ -1,43 +1,55 @@
-## Setup:
-1) Ensure Nginx and MySQL are installed
-- `sudo apt-get update`
-- `sudo apt-get install nginx`
-- `sudo apt-get install mysql-server`
-or
-- `sudo apt-get update && sudo apt-get install -y nginx && sudo apt-get install -y mysql-server`
+## Setup
+1) Ensure Nginx is configured for patientportaltoolkit
+- see [this file for instructions](https://github.com/maurya/openmrs-module-patientportaltoolkit/blob/master/0_meta/setup_nginx.md) if it is not
 
+2) Ensure MySQL is installed
+- `sudo apt-get install -y mysql-server` if it is not
 
-2) Create database, upload SQL from backup, create user, give user all access to that database (designed that way in code)
+3) Create database, upload SQL from backup, create user, give user all access to that database (designed that way in code)
 - `mysql -u root -p`
     - `CREATE DATABASE <database>;`
     - `use <database>;`
-    - `source /path/to/0_meta/SQL/omrs_portal.sql`
+    - `source /path/to/0_meta/sql/omrs_portal.sql`
     - `CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';`
     - `GRANT ALL ON <database>.* TO <username>@localhost;`
 
 
-2) Install PHP
+4) Install PHP
 - `sudo apt-get install -y php-fpm php-mysql`
-- set `cgi.fix_pathinfo=0` in `sudo nano /etc/php/7.0/fpm/php.ini`
+- set `cgi.fix_pathinfo=0` in `sudo nano /etc/php/7.0/fpm/php.ini` 
+    - this prevents php from 'fixing' mistyped pathnames and matching to nearest valid name.
+    - prevents potential security problems such as documented [here] (https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/)
 - `sudo systemctl restart php7.0-fpm`
+- Add Nginx to the www-data group
+    - run `sudo usermod -a -G www-data nginx`
+    - this gives nginx access to the listeners set in the php `sudo nano /etc/php/7.0/fpm/pool.d/www.conf` file.
+        - lines `listen.owner = www-data` and `listen.group = www-data`
+    - `sudo service nginx restart`
 
+5) Modify server block to serve the symptom-managment 'module'
+- `sudo nano /etc/nginx/sites-available/personalcancertoolkit`
+- ensure <domain>/symptom-managment/ redirects to proper directory and PHP will be properly served
+    - add `index.php` to `index` line
+    - add following lines into the server block
+    ```
+       # Redirect symptom-managment requests to proper path
+       location /symptom-managment {
+                alias /var/www/symptom-managment/public/;
 
-3) Ensure Nginx can serve PHP
-- `sudo nano /etc/nginx/sites-available/default`
-- add `index.php` to `index` line
-- add following lines into defaults, which specify to parse the php
-```
-    location ~ \.php$ {                
-        include snippets/fastcgi-php.conf;
+                # Parse php files properly 
+                location ~ \.php$ {
+                   include snippets/fastcgi-php.conf;
+                   #include fastcgi_params;
+                   fastcgi_param SCRIPT_FILENAME $request_filename;
+                   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+                }
+      }
 
-        # With php7.0-cgi alone:
-        fastcgi_pass 127.0.0.1:9000;
-        # With php7.0-fpm:
-        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-    }
-```
+    ```
+  
+- `sudo service nginx restart`
 
-4) Update SQL auth file
+6) Update SQL auth file
 - `sudo nano /path/to/notpublic/auth/mysql_auth.php`
 ```
     <?php
