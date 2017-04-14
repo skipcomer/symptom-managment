@@ -26,15 +26,15 @@
         - lines `listen.owner = www-data` and `listen.group = www-data`
     - `sudo service nginx restart`
 
-5) Modify server block to serve the symptom-managment 'module'
+5) Modify server block to serve the symptom-management 'module'
 - `sudo nano /etc/nginx/sites-available/personalcancertoolkit`
-- ensure <domain>/symptom-managment/ redirects to proper directory and PHP will be properly served
+- ensure <domain>/symptom-management/ redirects to proper directory and PHP will be properly served
     - add `index.php` to `index` line
     - add following lines into the server block
     ```
-       # Redirect symptom-managment requests to proper path
-       location /symptom-managment {
-                alias /var/www/symptom-managment/public/;
+       # Redirect symptom-management requests to proper path
+       location /symptom-management {
+                alias /var/www/symptom-management/public/;
 
                 # Parse php files properly 
                 location ~ \.php$ {
