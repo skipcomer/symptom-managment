@@ -17,6 +17,7 @@ window.addEventListener("load", function(){
         parent.postMessage({"height" : height }, "*");
     }
     // send message to parent about height updates
+    send_height_to_parent_function(); // whenever the page is loaded
     window.addEventListener("resize", send_height_to_parent_function); // whenever the page is resized
     var observer = new MutationObserver(send_height_to_parent_function);           // whenever DOM changes PT1
     var config = { attributes: true, childList: true, characterData: true, subtree:true}; // PT2
