@@ -12,7 +12,7 @@
 window.addEventListener("load", function(){
     if(window.self === window.top) return; // if w.self === w.top, we are not in an iframe 
     send_height_to_parent_function = function(){
-        var height = document.getElementsByTagName("html")[0].clientHeight;
+        var height = document.getElementsByTagName("body")[0].clientHeight;
         //console.log("Sending height as " + height + "px");
         parent.postMessage({"height" : height }, "*");
     }
