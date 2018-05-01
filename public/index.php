@@ -353,7 +353,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
 		case "html":$html .= $row["content"];
 				break;
 		case "include":	
-			$this_content = "./symptom/index_view.php";
+			$this_content = "./controllers/symptom/index_controller.php";
 			if($row["content"] > ""){$this_content = $row["content"];}
 			include($this_content);
 				break;	
